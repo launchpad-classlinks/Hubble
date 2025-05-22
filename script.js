@@ -5,10 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const redirectButton = document.getElementById('redirectButton');
 
     // Define the URL for the Rick Astley video
-    const rickRollURL = '<video width="640" height="360" controls>
-  <source src="rickroll.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>'; // The classic!
+    const rickRollURL = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'; // The classic!
 
     // Check if the button exists
     if (redirectButton) {
