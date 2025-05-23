@@ -9,21 +9,20 @@
 <body>
     <div class="container">
         <h1>System Notification</h1>
-        <p>We are experiencing some technical difficulties with Hubble.</p>
-        <p>Please use the button below to be redirected to a temporary access page.</p>
-        <button id="redirectButton">Proceed to Site</button>
-    </div>
+        <p>We are experiencing some technical difficulties with our main website.</p>
+        <p>Please click the button below to load the content.</p>
+        <button id="loadContentButton">Load Content</button>
 
-    <div id="videoModal" class="modal">
-        <div class="modal-content">
-            <span id="closeModal">&times;</span>
-            <audio id="popupAudio" controls>
-    <source src="videoplayback.m4a" type="audio/m4a">
-    Your browser does not support the audio tag.
-</audio>
-        </div>
-    </div>
+        <video id="rickVideo" class="media-player hidden" controls width="560" height="315">
+            <source src="myVideo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
 
+        <audio id="rickAudio" class="media-player hidden" controls>
+            <source src="myAudio.m4a" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
