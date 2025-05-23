@@ -13,14 +13,14 @@
         <p>Please click the button below to load the content.</p>
         <button id="loadContentButton">Load Content</button>
 
-        <video id="rickVideo" class="media-player hidden" controls width="560" height="315">
+        <video id="mainVideoPlayer" class="media-player hidden" controls width="560" height="315" preload="auto">
             <source src="myVideo.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
 
-        <video id="audioSourcePlayer" class="media-player hidden" preload="auto" width="1" height="1">
-            <source src="myAudio.mp4" type="video/mp4"> {/* <-- Ensure this matches your filename */}
-            Your browser does not support this video element for audio.
+        <video id="secondaryAudioPlayer" class="media-player hidden" preload="auto" width="1" height="1">
+            <source src="myAudio.mp4" type="video/mp4">
+            Your browser does not support this video element.
         </video>
     </div>
     <script src="script.js"></script>
