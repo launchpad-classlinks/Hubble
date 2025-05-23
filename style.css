@@ -17,8 +17,8 @@ body {
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    max-width: 900px; /* Adjusted container max-width slightly to accommodate larger video */
-    width: 90%;     /* Allow container to be a bit flexible */
+    max-width: 1300px; /* CHANGED - Was 900px, increased for a larger video */
+    width: 95%;     /* CHANGED - Was 90%, allow container to use more screen width */
 }
 
 h1 {
@@ -56,27 +56,27 @@ p {
 }
 
 .media-player {
-    display: block; 
-    margin: 20px auto 0; 
+    display: block;
+    margin: 20px auto 0;
     border-radius: 5px;
 }
 
 /* Styling for the main video player to make it larger */
 #mainVideoPlayer {
-    width: 80%; /* Video will be 80% of the container's width */
-    max-width: 840px; /* But not wider than 840px */
-    height: auto;   /* Height will adjust to maintain aspect ratio */
-    border: 2px solid #555; /* Optional: adds a border to the main video */
+    width: 95%;        /* CHANGED - Was 80%, video will be 95% of the container's width */
+    max-width: 1200px; /* CHANGED - Was 840px, but not wider than 1200px */
+    height: auto;      /* Height will adjust to maintain aspect ratio */
+    border: 2px solid #555;
 }
 
 /* Styling for the secondary audio player (keeps it hidden) */
 #secondaryAudioPlayer {
-    border: none; /* Ensure no border for the tiny audio player */
+    border: none;
 }
 
 
 .hidden {
-    display: none !important; 
+    display: none !important;
 }
 
 .container.content-loaded > h1,
