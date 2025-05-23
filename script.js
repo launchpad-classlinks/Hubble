@@ -2,27 +2,23 @@ document.addEventListener('DOMContentLoaded', function () {
     const redirectButton = document.getElementById('redirectButton');
     const videoModal = document.getElementById('videoModal');
     const closeModal = document.getElementById('closeModal');
-    const rickVideo = document.getElementById('rickVideo');
+    const popupVideo = document.getElementById('popupVideo');
 
-    if (redirectButton) {
-        redirectButton.addEventListener('click', function () {
-            videoModal.style.display = 'flex';
-            rickVideo.currentTime = 0;
-            rickVideo.play();
-        });
-    }
+    redirectButton.addEventListener('click', function () {
+        videoModal.style.display = 'flex';
+        popupVideo.currentTime = 0;
+        popupVideo.play();
+    });
 
-    if (closeModal) {
-        closeModal.addEventListener('click', function () {
-            videoModal.style.display = 'none';
-            rickVideo.pause();
-        });
-    }
+    closeModal.addEventListener('click', function () {
+        videoModal.style.display = 'none';
+        popupVideo.pause();
+    });
 
     window.addEventListener('click', function (event) {
         if (event.target === videoModal) {
             videoModal.style.display = 'none';
-            rickVideo.pause();
+            popupVideo.pause();
         }
     });
 });
